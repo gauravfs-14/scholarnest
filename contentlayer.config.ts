@@ -13,6 +13,7 @@ export const Paper = defineDocumentType(() => ({
 
   fields: {
     title: { type: "string", required: true },
+    abstract: { type: "string", required: true },
     date: { type: "date", required: true },
     status: { type: "string", required: false },
     version: { type: "string", required: false },

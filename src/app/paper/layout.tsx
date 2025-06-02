@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sidebar";
 import { SITE_CONFIG } from "@/config/site";
 import Footer from "@/components/footer";
+import { ModeToggle } from "@/hooks/use-theme";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,13 +25,14 @@ export default function RootLayout({
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b">
+        <header className="flex h-16 shrink-0 items-center gap-2 border-b justify-between pr-4">
           <div className="flex items-center gap-2 px-3">
             <SidebarTrigger />
             <Separator orientation="vertical" className="mr-2 h-4" />
             <Breadcrumbs className="hidden md:flex" />
             <span className="block md:hidden">{SITE_CONFIG.name}</span>
           </div>
+          <ModeToggle />
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4">
           <div className="flex-1 overflow-y-auto">{children}</div>

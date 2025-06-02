@@ -27,6 +27,9 @@ acknowledgements: "This work was supported by the Example Foundation and Placeho
 sort_description: |
   This is a short summary or abstract of the research paper. It highlights the key contribution or result, and mentions how the study was conducted and what implications it has.
 
+abstract: |
+  This paper presents a template for creating research documentation using MDX. It includes metadata, authorship information, and structured content to facilitate scholarly publishing.
+
 tags: ["placeholder", "test", "template"]
 topics: ["Computer Science", "Data Science"]
 methods: ["Simulation", "Statistical Modeling"]
@@ -56,8 +59,6 @@ tools:
   - "Scikit-learn"
   - "TensorFlow"
 
-cover_image: "/assets/images/sample-cover.png"
-
 citation_styles:
   apa: "Example, A., & Placeholder, B. (2025). Placeholder Title for Research Paper. Placeholder Conference."
   mla: "Example, Alice, and Bob Placeholder. 'Placeholder Title for Research Paper.' Placeholder Conference 2025."
@@ -73,15 +74,8 @@ citation_styles:
 
 is_open_access: true
 related_papers:
-  - "sample-related-paper"
-  - "template-paper"
+  - "ai/sample"
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-
-## Abstract
-
-This is the abstract section. It provides a concise summary of the research, including the problem addressed, methodology, and main findings.
 
 ## Introduction
 
@@ -91,11 +85,34 @@ The purpose of this paper is to demonstrate a well-structured MDX layout for res
 
 We used simulated data with placeholder analysis to demonstrate the document template. No real experimentation was conducted.
 
+<MDXImage src="/assets/papers/default_cover.jpg" alt="Sample Image"/>
+
 ## Key Findings
 
 - Supports MDX and JSX
 - Includes interactive and visual content
 - Well-structured metadata schema for scholarly publishing
+
+<MDXAccordion data={[
+  {
+    question: "What is ScholarNest?",
+    answer:
+      "ScholarNest is a collaborative platform for publishing and sharing research work using modern web technologies.",
+  },
+  {
+    question: "Is the platform open-source?",
+    answer: "Yes, it's completely open-source and available on GitHub.",
+  },
+  {
+    question: "How can I contribute?",
+    answer: (
+      <>
+        You can fork the repo on GitHub and submit a pull request. Check the
+        CONTRIBUTING.md file for guidelines.
+      </>
+    ),
+  }
+]} />
 
 ## Conclusion
 
