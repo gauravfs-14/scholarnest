@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 ScholarNest
 
-## Getting Started
+**ScholarNest** is a modern, open-source platform for publishing and exploring research papers online. It enables beautifully rendered academic content using MDX and is designed for individuals, labs, or research groups who want to share their papers, tools, and datasets in a clean, organized, and discoverable way.
 
-First, run the development server:
+## ✨ Features
+
+- 📝 MDX-based paper authoring with academic metadata (title, authors, publication, DOI, BibTeX, datasets, tools, etc.)
+- 📁 Folder-aware paper organization with sidebar sorting
+- 🎓 Author affiliation display, corresponding author highlight
+- 📄 Abstract, acknowledgements, and citation styles supported
+- 📦 Responsive layout with prose-style typography
+- 🧩 Component wrappers (e.g., `<MDXImage>`, `<MDXAccordion>`) usable directly in MDX
+- 🧠 Built with [Contentlayer](https://contentlayer.dev/), [shadcn/ui](https://ui.shadcn.com/), and [Next.js](https://nextjs.org/)
+- 🚀 More features comming soon...
+
+## 📂 Project Structure
+
+```txt
+src/
+├── components/        # UI and MDX component wrappers
+├── papers/            # .mdx research papers (nested allowed)
+├── app/paper/[...slug] # Dynamic MDX page rendering
+├── lib/               # Utilities
+└── styles/            # Global Tailwind styles
+````
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/gauravfs-14/scholarnest.git
+cd scholarnest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+# or
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Run the Dev Server
 
-## Learn More
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open `http://localhost:3000` to see your site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✍️ Writing a New Paper
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add a new `.mdx` file in `src/papers/`, for example `src/papers/sample.mdx`.
 
-## Deploy on Vercel
+## 🧩 Custom MDX Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ScholarNest provides reusable components for writing interactive academic papers. Use them like:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```mdx
+<MDXImage src="/figures/chart1.png" alt="Gradient sparsity impact" />
+
+<MDXAccordion
+  data={[
+    { question: "What is L2 Regularization?", answer: "A penalty term..." }
+  ]}
+/>
+```
+
+## 🔗 Related Projects
+
+* [Contentlayer](https://contentlayer.dev/)
+* [shadcn/ui](https://ui.shadcn.com/)
+* [Next.js](https://nextjs.org/)
+* [Vercel](https://vercel.com/) — Recommended for deployment
+
+## 🚀 Deployment
+
+You can deploy directly to [Vercel](https://vercel.com/) for free:
+
+```bash
+npm run build
+npm run start
+# or
+yarn build
+yarn start
+```
+
+Or set up CI for `next export` if you prefer a static export.
+
+---
+
+## 📜 License
+
+MIT License © 2025 [Gaurab Chhetri](https://gaurabchhetri.com.np).
+
+> This project is open-source and free to use. Contributions are welcome! However, please link back to the original repository if you use this code in your projects.
+
+## 📚 Citation
+
+If you use ScholarNest in your research or projects, please cite it as follows:
+
+```bibtex
+@misc{scholarnest2025,
+  title = {ScholarNest: A Modern Platform for Academic Publishing},
+  author = {Chhetri, Gaurab},
+  year = {2025},
+  howpublished = {\url{https://github.com/gauravfs-14/scholarnest}},
+  note = {Accessed: YYYY-MM-DD}
+}
+```
