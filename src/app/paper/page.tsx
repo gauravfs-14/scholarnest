@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
-import { allPapers, Paper } from "contentlayer/generated";
+import { allPapers } from "contentlayer/generated";
 import { Badge } from "@/components/ui/badge";
 
 export function PaperCard({ slug }: { slug: string }) {

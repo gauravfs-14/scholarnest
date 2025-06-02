@@ -36,11 +36,11 @@ const PaperLayout = () => {
     }
   }, [paper, slug]);
 
-  if (!paper) {
-    return <p className="text-center text-red-600">Paper not found.</p>;
-  }
+  const MDXContent = useMDXComponent(paper?.body?.code ?? "");
 
-  const MDXContent = useMDXComponent(paper.body.code);
+  if (!paper) {
+    return null; // or handle not found case
+  }
 
   return (
     <article className="max-w-[760px] mx-auto px-6 py-12 font-serif text-foreground">
