@@ -10,7 +10,6 @@ import Image from "next/image";
 import { FileText, GitBranch, Mic, Presentation, Video } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { PaperCard } from "../page";
 import {
   HoverCard,
   HoverCardContent,
@@ -18,6 +17,7 @@ import {
 } from "@/components/ui/hover-card";
 import MDXImage from "@/components/mdx/MDXImage";
 import MDXAccordion from "@/components/mdx/MDXAccordion";
+import PaperCard from "../paper-card";
 
 const mdxComponents = {
   MDXImage,
