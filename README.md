@@ -103,11 +103,14 @@ MIT License © 2025 [Gaurab Chhetri](https://gaurabchhetri.com.np).
 If you use ScholarNest in your research or projects, please cite it as follows:
 
 ```bibtex
-@misc{scholarnest2025,
-  title = {ScholarNest: A Modern Platform for Academic Publishing},
-  author = {Chhetri, Gaurab},
-  year = {2025},
-  howpublished = {\url{https://github.com/gauravfs-14/scholarnest}},
-  note = {Accessed: YYYY-MM-DD}
+@software{gaurab_chhetri_2025_17003358,
+  author       = {Gaurab Chhetri},
+  title        = {gauravfs-14/scholarnest: v1.0.0},
+  month        = aug,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.17003358},
+  url          = {https://doi.org/10.5281/zenodo.17003358},
 }
 ```
