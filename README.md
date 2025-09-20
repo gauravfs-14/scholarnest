@@ -1,5 +1,7 @@
 # 🧠 ScholarNest
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17003358.svg)](https://doi.org/10.5281/zenodo.17003358)
+
 **ScholarNest** is a modern, open-source platform for publishing and exploring research papers online. It enables beautifully rendered academic content using MDX and is designed for individuals, labs, or research groups who want to share their papers, tools, and datasets in a clean, organized, and discoverable way.
 
 ## ✨ Features
